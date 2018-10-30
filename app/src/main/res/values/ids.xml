@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="node_header" type="id" />
+    <item name="node_items" type="id" />
+    <item name="tree_items" type="id" />
+
+    <item name="fam_button_icon" type="id" />
+    <item name="share_button_id" type="id" />
+    <item name="clear_button_id" type="id" />
+    <item name="setting_button_id" type="id" />
+    <item name="search_button_id" type="id" />
+
+    <item name="fab_label" type="id" />
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_chevron_right" translatable="false">&#xf054;</string>
+    <string name="icon_chevron_down" translatable="false">&#xf078;</string>
+    <string name="share_log_icon" translatable="false">&#xf1e0;</string>
+    <string name="search_log_icon" translatable="false">&#xf002;</string>
+    <string name="share_file" translatable="false">&#xf0f6;</string>
+
+    <string name="icon_times" translatable="false">&#xf00d;</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:summary="Advanced Search Setting"
+        android:title="Search">
+
+        <CheckBoxPreference
+            android:key="case_sensitive"
+            android:title="Case Sensitive" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Email Settings"
+        android:title="E-Mail">
+
+        <EditTextPreference
+            android:dialogTitle="Set E-Mail ID"
+            android:key="mail_to"
+            android:summary=" Set E-Mail ID on which mail to be sent"
+            android:title="E-Mail ID" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

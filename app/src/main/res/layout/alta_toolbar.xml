@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alta_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fiftyfiveDip"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fiveDip"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Alta Logger"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="@dimen/sixteenDip"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <com.altametrics.altalogger.ui.components.LogFontViewField
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/tenDip"
+        android:paddingRight="@dimen/tenDip"
+        android:text="@string/search_log_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twentytwoDip" />
+
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <include layout="@layout/search_box_layout" />
+
+    </LinearLayout>
+
+</RelativeLayout>

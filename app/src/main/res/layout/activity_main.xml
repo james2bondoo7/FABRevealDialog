@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/superRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activities.LogMainActivity">
+
+    <include
+        android:id="@+id/alta_tool_bar"
+        layout="@layout/alta_toolbar" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alta_tool_bar"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:listSelector="@color/lightGray"
+        android:background="@color/lightGray"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/no_logs_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No Logs Found"
+            android:textColor="@color/lightGray"
+            android:textSize="@dimen/sixteenDip"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ImageView
+            android:layout_width="@dimen/hundred_sixtyDip"
+            android:layout_height="@dimen/two_hundredDip"
+            android:src="@drawable/empty_screen" />
+
+    </LinearLayout>
+
+    <com.altametrics.altalogger.ui.components.fab.FloatingActionMenu
+        android:id="@+id/fabMenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:menu_icon="@drawable/icon_menu"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="@color/colorPrimaryLight">
+
+        <!--<com.altametrics.altalogger.ui.components.fab.FloatingActionButton
+            android:id="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            app:fab_label="Share All"
+            app:fab_size="mini" />-->
+
+        <com.altametrics.altalogger.ui.components.fab.FloatingActionButton
+            android:id="@+id/clearLogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_delete"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            app:fab_label="Clear Log"
+            app:fab_size="mini" />
+
+        <com.altametrics.altalogger.ui.components.fab.FloatingActionButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_settings"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimaryLight"
+            app:fab_label="Settings"
+            app:fab_size="mini" />
+
+    </com.altametrics.altalogger.ui.components.fab.FloatingActionMenu>
+
+</RelativeLayout>
